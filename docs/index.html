@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ecoverse Security - Proteção Sustentável</title>
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+      padding: 100px 20px;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;} to {opacity: 1;}
+    }
+
+    nav {
+      background: #0f5132;
+      padding: 15px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #9fe2bf;
+    }
+
+    .section {
+      padding: 50px;
+      max-width: 1100px;
+      margin: auto;
+      background: #fff;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+      animation: slideUp 1s ease;
+    }
+
+    @keyframes slideUp {
+      from {transform: translateY(20px); opacity: 0;} to {transform: translateY(0); opacity: 1;}
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .service-card {
+      background: #e9f7ef;
+      padding: 25px;
+      border-radius: 10px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .service-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .service-card i {
+      font-size: 40px;
+      margin-bottom: 15px;
+      color: #0a3d2e;
+    }
+
+    .btn {
+      background: #0a3d2e;
+      color: #fff;
+      padding: 12px 20px;
+      display: inline-block;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0f5132;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+      background: #0a3d2e;
+      color: #fff;
+    }
+
+    /* Galeria */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER ANIMADO -->
+  <header>
+    <h1>Ecoverse Security</h1>
+    <p>Inovação, Segurança e Sustentabilidade para um mundo mais verde</p>
+    <a href="#servicos" class="btn">Conheça nossos serviços</a>
+  </header>
+
+  <!-- MENU -->
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#sustentabilidade">Sustentabilidade</a>
+    <a href="#contato">Contato</a>
+    <a href="#clientes">Clientes</a>
+    <a href="#parceiros">Parceiros</a>
+  </nav>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="section">
+    <h2>Sobre a Ecoverse</h2>
+    <p>A Ecoverse Security combina alta tecnologia com responsabilidade ambiental, criando soluções completas de segurança sustentável.
+    Nosso objetivo é proteger pessoas, dados e empresas, preservando o meio ambiente.</p>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos" class="section">
+    <h2>Nossos Serviços</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <i class="fa-solid fa-shield-halved"></i>
+        <h3>Monitoramento Sustentável</h3>
+        <p>Sistemas inteligentes com consumo reduzido de energia.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-solid fa-recycle"></i>
+        <h3>Infraestrutura Verde</h3>
+        <p>Projetos corporativos com materiais recicláveis e eficiência energética.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-solid fa-database"></i>
+        <h3>Proteção de Dados</h3>
+        <p>Segurança digital com práticas ecoeficientes.</p>
+      </div>
+
+      <div class="service-card">
+        <i class="fa-solid fa-solar-panel"></i>
+        <h3>Energia Limpa</h3>
+        <p>Instalação de tecnologias que reduzem impacto ambiental.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERIA -->
+  <section id="galeria" class="section">
+    <h2>Galeria de Projetos</h2>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1521790797524-b2497295b8a0" />
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" />
+      <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" />
+      <img src="https://images.unsplash.com/photo-1535223289827-42f1e9919769" />
+    </div>
+  </section>
+
+  <!-- SUSTENTABILIDADE -->
+  <section id="sustentabilidade" class="section">
+    <h2>Compromisso Ambiental</h2>
+    <ul>
+      <li>Uso de energia limpa em todos os sistemas</li>
+      <li>Materiais recicláveis em 90% dos projetos</li>
+      <li>Programas de recolhimento e reuso de eletrônicos</li>
+      <li>Redução de carbono em operações internas</li>
+    </ul>
+  </section>
+
+  <!-- CLIENTES -->
+  <section id="clientes" class="section">
+    <h2>Nossos Clientes</h2>
+    <p>Empresas que confiam na Ecoverse Security:</p>
+    <ul>
+      <li>Corporações de tecnologia</li>
+      <li>Instituições financeiras</li>
+      <li>Empresas de logística sustentável</li>
+      <li>Órgãos governamentais</li>
+    </ul>
+  </section>
+
+  <!-- PARCEIROS -->
+  <section id="parceiros" class="section">
+    <h2>Parceiros Oficiais</h2>
+    <ul>
+      <li>Dell Green</li>
+      <li>HP Planet Partners</li>
+      <li>Lenovo EPEAT Gold</li>
+    </ul>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="section">
+    <h2>Fale Conosco</h2>
+    <p>Email: contato@ecoverse.com.br</p>
+    <p>Telefone: (11) 90000-0000</p>
+    <a class="btn" href="mailto:contato@ecoverse.com.br">Entrar em Contato</a>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Ecoverse Security – Protegendo o futuro, hoje.</p>
+  </footer>
+
+</body>
+</html>
